@@ -1,0 +1,94 @@
+.homepage {
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+  height: 3000px;
+  background: rgb(166, 0, 255);
+  background: linear-gradient(315deg, rgb(166, 0, 255) 20%, rgb(46, 46, 208) 50%, rgb(15, 144, 149) 80%);
+}
+.homepage h1 {
+  text-align: center;
+  color: white;
+  padding: 40px 40px;
+  margin: 0 0;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.wrapper_lessons {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  grid-column-gap: 20px;
+}
+.wrapper_lessons a {
+  width: 100%;
+  border: 3px solid white;
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Anonymous Pro", monospace;
+}
+.wrapper_lessons a:hover {
+  background: white;
+  color: #0f9095;
+  transition: 0.4s;
+}
+
+body {
+  overflow: hidden;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+@media (min-width: 1020px) and (max-width: 1349px) {
+  body {
+    overflow: visible;
+  }
+  .wrapper_lessons {
+    grid-template-columns: repeat(3, 1fr);
+    width: 700px;
+  }
+  .wrapper_lessons a {
+    height: 100px;
+  }
+}
+@media (min-width: 851px) and (max-width: 1019px) {
+  body {
+    overflow: visible;
+  }
+  .wrapper_lessons {
+    grid-template-columns: repeat(2, 1fr);
+    width: 700px;
+  }
+  .wrapper_lessons a {
+    height: 100px;
+  }
+}
+@media (min-width: 400px) and (max-width: 850px) {
+  body {
+    overflow: visible;
+  }
+  .homepage {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .wrapper_lessons {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  .wrapper_lessons a {
+    height: 100px;
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+}/*# sourceMappingURL=main.css.map */
